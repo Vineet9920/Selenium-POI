@@ -22,7 +22,8 @@ public class Check_Dashboard_Button {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         DataFormatter formatter = new DataFormatter();
 
-        try (FileInputStream fis = new FileInputStream("D:\\new_winit\\Login_ID.xlsx");
+		// Give Path from File of Excel is save then Paste in FileInputStream ("  ")
+        try (FileInputStream fis = new FileInputStream("//Login_ID.xlsx");
              Workbook workbook = new XSSFWorkbook(fis)) {
 
         	
@@ -459,3 +460,4 @@ public class Check_Dashboard_Button {
 //finally {
 //    driver.quit();
 //}
+
